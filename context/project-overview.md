@@ -416,6 +416,10 @@ flowchart TD
 
 **Micro-interactions:** smooth transitions, hover states on cards, toast notifications, loading skeletons.
 
+**Screenshots**: Refer to the screen shots below as a base for the dashboard UI. It does not need to be exact, use it as a reference.
+- @context/screenshots/DevStash-Dashboard-UI-Main.png
+- @context/screenshots/DevStash-Dashboard-ui-with-Drawer.png
+
 ---
 
 ## 9. Tech Stack Summary
