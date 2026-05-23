@@ -119,11 +119,12 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
+  html,
   body {
-    @apply bg-background text-foreground;
-    }
-  html {
-    @apply font-sans;
-    }
+    @apply h-full;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
 }
