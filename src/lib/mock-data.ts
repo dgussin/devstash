@@ -75,7 +75,22 @@ export const mockCollections = [
   },
 ];
 
-export const mockItems = [
+export interface MockItem {
+  id: string;
+  title: string;
+  description: string;
+  contentType: "TEXT" | "URL" | "FILE";
+  content?: string;
+  url?: string;
+  language?: string | null;
+  itemTypeId: string;
+  isFavorite: boolean;
+  isPinned: boolean;
+  tags: string[];
+  collectionIds: string[];
+}
+
+export const mockItems: MockItem[] = [
   {
     id: "item_1",
     title: "React useEffect cleanup",
@@ -179,6 +194,32 @@ export const mockItems = [
     isPinned: false,
     tags: ["system-prompt", "ai-engineering"],
     collectionIds: ["col_2"],
+  },
+  {
+    id: "item_9",
+    title: "Python flatten nested list",
+    description: "Recursively flatten an arbitrarily nested list",
+    contentType: "TEXT",
+    content: `def flatten(lst):\n    for item in lst:\n        if isinstance(item, list):\n            yield from flatten(item)\n        else:\n            yield item`,
+    language: "python",
+    itemTypeId: "type_snippet",
+    isFavorite: false,
+    isPinned: false,
+    tags: ["python", "utils"],
+    collectionIds: ["col_6"],
+  },
+  {
+    id: "item_10",
+    title: "MDN Web Docs",
+    description: "Comprehensive web API reference",
+    contentType: "URL",
+    url: "https://developer.mozilla.org",
+    language: null,
+    itemTypeId: "type_link",
+    isFavorite: false,
+    isPinned: false,
+    tags: ["mdn", "reference", "web"],
+    collectionIds: ["col_4"],
   },
 ];
 
